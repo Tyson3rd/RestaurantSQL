@@ -7,10 +7,10 @@ const {Restaurant, menuItem, Menu } = require("./index")
 
 // const banana = require('./fruit').banana
 
-describe('Restaurant Database', () => {
+describe('Restaurant Database', () => { // describe test with a string for the 1st perimeter &  for the 2nd 
 
-	beforeAll(async () => {
-		await sequelize.sync({force: true})
+	beforeAll(async () => { //allows the database to be clear (clean out) before we test
+		await sequelize.sync({force: true}) //.sync methoh is applied. "{}" is an object
 	})
 
 	test('can create a restaurant', async() => {

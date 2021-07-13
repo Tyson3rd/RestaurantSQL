@@ -1,6 +1,6 @@
 const {sequelize, DataTypes, Model} = require('./db')
 
-class Menu extends Model {
+class Menu extends Model { //creating a table called "Menu"
 
 }
 Menu.init({
@@ -8,30 +8,10 @@ Menu.init({
     breakfast : DataTypes.STRING,
     cost: DataTypes.NUMBER,
 }, {
-	sequelize,
-	// timestamps: false,
+	sequelize, //sequelize is my database
+	timestamps: false, //shows you the history of the items you put in your database
 });
 
 
-module.exports = { Menu };
+module.exports = { Menu }; // in order to use the table we have to export
 
-
-
-
-
-
-// const {sequelize, DataTypes, Model} = require('./db')
-
-// class Menu extends Model {
-
-// }
-
-// Menu.init({
-//     name: DataTypes.STRING
-// }, {
-// 	sequelize,
-// 	// timestamps: false,
-// });
-
-
-// module.exports = { Menu };

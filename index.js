@@ -14,23 +14,3 @@ menuItem.belongsTo(Restaurant) //adds a foreign key on the musician table, for t
 Menu.hasMany(menuItem) //gives us Sequelize magic methods
 
 module.exports = { Restaurant, Menu, menuItem }; // make sure we export our models with the associations added!
-
-
-// const {sequelize, DataTypes, Model} = require('./db');
-
-// class Restaurant extends Model {
-// 	//add custom methods for advanced querying
-// }
-
-// Restaurant.init({
-// 	name: DataTypes.STRING,
-// 	food: DataTypes.STRING,
-// 	size: DataTypes.BOOLEAN,
-	
-// }, {
-// 	sequelize,
-// 	// timestamps: false,
-// });
-
-
-// module.exports = { Restaurant };
